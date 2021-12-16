@@ -1,0 +1,3258 @@
+/*--------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------MENU---------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	margin: 0 auto; /*контролирует глобальные отступы для адаптивной верстки!!!!!!!!!!!!!!!!!!!!!!!!*/
+	max-width: 2000px;
+}
+
+.container-fluid{ /*контролирует глобольные отступы при определении рамок контейнера в body*/
+	padding: 0px;
+}
+
+/*-----------------------------------------*/
+
+header{
+	height: 966px;
+	max-width: 2000px; /*выравнивает отступы с адаптивной версткой!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+	background-image: url(../img/backgr_header.jpg); /*фоновая карттинка в HEADER*/
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin: 0 auto; /*размещение по цетру с адаптивной версткой!!!!!!!!!!!!!!!!!!!!!!*/
+} 
+
+header div.menu{
+	height: 137px;
+	background: rgba(0, 0, 0, .45);
+}
+
+header div.menu a.LOGO img{   /*LOGO*/
+	display: block;
+	padding-top: 50px;	
+	padding-left: 72px;
+	margin-right: auto;
+}
+
+header nav ul{
+	list-style-type: none;
+	padding-right: 0px;
+	padding-top: 65px;
+	margin: 0;
+}
+header nav ul li{
+	display: inline-block;
+	margin-right: 30px;
+}
+header nav ul li a{
+	color: #ffffff;
+	/*font-size: 18px;*/
+	font-size: calc(14px + 4 * (100vw / 2000)); 
+	text-decoration: none;
+	font-weight: 600;
+}
+header nav ul li a:hover{
+	color: #39b9ef;
+	text-decoration: underline;
+}
+
+
+div.search-box input.search-text{
+	width: 70%;
+	height: 25px;
+	background: none;
+	border-radius: 6px;
+	border: 1px solid #535353;
+	color: #ffffff;
+	/*font-size: 18px;*/
+	font-size: calc(14px + 4 * (100vw / 2000)); 
+	display: block;
+	float: left;
+	/*flex: !important;*/
+	margin-top: 60px;
+	opacity: 0.4;
+	/*transition: 1.0s;	*/
+}
+div.search-box input.search-text:hover {
+	height: 25px;
+	background: none;
+	border-radius: 6px;
+	border: 1px solid #535353;
+	color: #ffffff;
+	/*font-size: 18px;*/
+	font-size: calc(14px + 4 * (100vw / 2000));
+	display: block;
+	float: left;
+	/*flex: !important;	*/
+	margin-top: 60px;
+	opacity: 1.0;
+}
+
+
+
+div.search-box a.search-button img{
+	display: flex;	
+	position: relative;
+	right: 24px;
+	top: 64px;	
+}
+div.search-box a.search-button img:hover {
+	display: flex;	
+	position: relative;
+	right: 24px;
+	top: 64px;	
+}
+
+/*-------------------call-to-action------------------*/
+
+header div.call-to-action h1{
+	margin-top: 277px;
+	text-align: center;
+	color: #ffffff;
+	/*font-size: 72px;*/
+	font-size: calc(48px + 24 * (100vw / 2000));    /* При разрешении 1920px = 100vw, исходный размер шрифта = 72px при ширине макета 2000px */
+	font-weight: bold;							    /* выбираем min значение шрифта 48px при min разрешении девайса 320px, при этом доавочное число: 72px - 48px = 24px */
+	margin-bottom: 0px;							    /* расчет будет выполняться по формуле: calc(48px + 24 * (100vw / 2000)) */
+}													/* для компенсации разрешения 320px (так как нижняя граница не 0xp, а 320px) - расчет будет: 
+													/* calc(48px + (24 + 24 * 0.7) * ((100vw - 320px) / 2000)), где 0.7 - 70% */
+header div.call-to-action h1 span{
+	color: #2ebaee;
+}
+
+header div.call-to-action p{
+	margin-top: 11px;
+	text-align: center;
+	color: #ffffff;
+	/*font-size: 24px;*/
+	font-size: calc(16px + 8 * (100vw / 2000));
+	margin-bottom: 72px;
+}
+
+header div.call-to-action a{
+	display: block; /*блочный эелемент*/
+	width: 215px;
+	height: 50px;
+	background: #2ebaee;
+	color: #ffffff;
+	border-radius: 55px;
+	text-align: center;
+	margin: 0 auto;
+	line-height: 48px;
+	font-size: 18px;
+	font-weight: bold;
+	text-decoration: none;
+	border: 1px solid;
+}
+
+header div.call-to-action a:hover {
+	display: block; /*блочный эелемент*/
+	width: 215px;
+	height: 50px;
+	background: #ffffff;
+	color:  #2ebaee;
+	border-radius: 55px;
+	text-align: center;
+	margin: 0 auto;
+	line-height: 48px;
+	font-size: 18px;
+	font-weight: bold;
+	text-decoration: none;
+	border: 1px solid;
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------OUR SERVICES----------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+
+div.container1{
+	max-width: 2000px;
+	height: auto;
+	background-image: url(../img/BackGr_Srv.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin: 0 auto;
+	padding-top: 0px;
+}
+
+div.container1_1{
+	max-width: 1300px;
+	margin: 0 auto;
+	padding-bottom: 145px;
+}
+
+section.Our_services h2{
+	color: #242424;
+	/*font-size: 48px;*/
+	font-size: calc(32px + 16 * (100vw / 2000));
+	text-align: center;
+	padding-top: 70px;
+	border-bottom: 3px solid #e7e7e7;
+	padding-bottom: 70px;
+	margin: 0 auto;
+}
+
+section.Our_services div.services div{
+	margin-top: 80px;   
+}
+
+div.services div img.RD{
+	display: block;
+	margin-bottom: 46px;
+}
+
+div.services div img.Lock{
+	display: block;
+	margin-bottom: 46px;
+	padding-top: 7px;
+}
+
+div.services div img.TV{
+	display: block;
+	margin-bottom: 46px;
+	padding-top: 14px;
+}
+
+div.services div  img.Lamp{
+	display: block;
+	margin-bottom: 46px;
+	padding-top: 11px;
+}
+
+div.services div h3{
+	color: #242424;
+	/*font-size: 24px;*/
+	font-size: calc(18px + 6 * (100vw / 2000));
+	margin-bottom: 20px;
+}
+
+div.services div p{
+	color: #878787;
+	/*font-size: 14px;*/
+	font-size: calc(12px + 2 * (100vw / 2000));
+	line-height: 24px;
+	max-width: 520px;
+	font-weight: bold;
+}
+
+/*------------------------------------*/
+
+div.services_1 a.button1{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	background: #2ebaee;
+	height: 45px;
+	width: 150px;
+	border-radius: 55px;
+	font-size: 14px;
+	color: #ffffff;
+	line-height: 44px;
+	margin: 45px auto 180px auto;
+	font-weight: bold;
+	border: 1px solid;	
+}
+div.services_1 a.button1:hover{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	background: #ffffff;
+	height: 45px;
+	width: 150px;
+	border-radius: 55px;
+	font-size: 14px;
+	color: #2ebaee;
+	line-height: 44px;
+	margin: 45px auto 180px auto;
+	border: 1px solid;	
+}
+
+/*------------------------------------*/
+
+div.services_2{
+	padding-top: 0px;
+}
+
+div.services_2 h3{
+	color: #242424;
+	/*font-size: 36px;*/
+	font-size: calc(22px + 14 * (100vw / 2000));
+	margin-top: 92px;
+	font-weight: 600;	
+	/*word-spacing: -5px;*/
+	letter-spacing: -1.1px;
+}
+
+div.services_2 p{
+	color: #878787;
+	/*font-size: 14px;*/
+	font-size: calc(8px + 6 * (100vw / 2000));
+	max-width: 520px;
+	font-weight: bold;
+	margin-top: 38px;
+	line-height: 2.1;
+	letter-spacing: -0.2px;
+}
+
+div.services_2 a.button2{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	background: #2ebaee;
+	height: 45px;
+	width: 150px;
+	border-radius: 55px;
+	font-size: 14px;
+	color: #ffffff;
+	line-height: 44px;
+	font-weight: bold;
+	margin-top: 42px;
+	border: 1px solid;
+}
+div.services_2 a.button2:hover{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	background: #ffffff;
+	height: 45px;
+	width: 150px;
+	border-radius: 55px;
+	font-size: 14px;
+	color: #2ebaee;
+	line-height: 44px;
+	font-weight: bold;
+	margin-top: 42px;
+	border: 1px solid;
+}
+
+div.services_2 div.Mc_PC img.PC_img-adaptive{
+	display: block;
+	margin-left: -76px;	
+	max-width: 130%; /*адаптирует размер картинок к разрешениям браузера!!!!!!!!!!!!!!!!!!!!!!*/
+	height: auto;	
+}
+
+/*------------------------------------*/
+
+div.services_3{
+	margin-top: 225px;
+}
+
+div.services_3 div.services-3{
+	padding-left: 135px;
+}
+
+div.Mc_MP img.MP_img-adaptive{
+	display: block;	
+	max-width: 130%; /*адаптирует размер картинок к разрешениям браузера!!!!!!!!!!!!!!!!!!!!!!*/
+	height: auto;
+	float: right; /*выравнивать изображение по правому краю родительского элемента или окна браузера*/
+
+}
+
+div.services_3 h3{
+	color: #ffffff;
+	/*font-size: 36px;*/
+	font-size: calc(22px + 14 * (100vw / 2000));
+	margin-top: 73px;
+	font-weight: 600;
+	/*word-spacing: -5px;*/
+	letter-spacing: -1.1px;
+}
+
+div.services_3 p{
+	color: #ffffff;
+	/*font-size: 14px;*/
+	font-size: calc(8px + 6 * (100vw / 2000));
+	font-weight: bold;
+	max-width: 530px;
+	line-height: 2.1;
+	letter-spacing: -0.2px;
+}
+
+
+div.services_3 a.button3{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	background: #ffffff;
+	height: 45px;
+	width: 150px;
+	border-radius: 55px;
+	font-size: 14px;
+	color: #2ebaee;
+	line-height: 44px;
+	font-weight: bold;
+	margin-top: 45px;
+	border: 1px solid;
+}
+div.services_3 a.button3:hover{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	background: #2ebaee;
+	height: 45px;
+	width: 150px;
+	border-radius: 55px;
+	font-size: 14px;
+	color: #ffffff;
+	line-height: 44px;
+	font-weight: bold;
+	margin-top: 45px;
+	border: 1px solid;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------MAN-&-DESK+CATEGORY----------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+.img-adaptive-man_desk{
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+div.container2{
+	max-width: 2000px;
+	height: auto;
+	margin: 0 auto;
+	padding-top: 0px;
+}
+
+div.man_desk{
+	max-height: 669px;
+}
+
+div.man_desk div.img-man_desk{
+	display: block;	
+	width: 50%;
+	height: auto;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+div.man_desk div div.text{
+	display: block;
+	margin-left: 133px;
+	margin-top: 80px;
+	max-width: 526px;
+}
+
+div.man_desk h3{
+	color: #242424;
+	/*font-size: 72px;*/
+	font-size: calc(22px + 50 * (100vw / 2000));
+	font-weight: 600; /*меняет жирность шрифта в зависимости от условных единиц от 100 до 900!!!!!!!!!!!!!!!!!!!!!!!!!*/
+	margin-bottom: 0px;
+	/*word-spacing: -5px;*/
+	letter-spacing: -1.1px;
+}
+
+div.man_desk p{
+	color: #878787;
+	/*font-size: 14px;*/
+	font-size: calc(8px + 6 * (100vw / 2000));
+	line-height: 2.1;
+	font-weight: bold;
+	margin-top: 90px;
+	margin-bottom: 68px;
+	letter-spacing: -0.2px;
+}
+
+div.man_desk a.button4{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	background: #2ebaee;
+	height: 45px;
+	width: 150px;
+	border-radius: 55px;
+	font-size: 14px;
+	color: #ffffff;
+	line-height: 44px;
+	font-weight: bold;
+	border: 1px solid;
+}
+div.man_desk a.button4:hover{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	background: #ffffff;
+	height: 45px;
+	width: 150px;
+	border-radius: 55px;
+	font-size: 14px;
+	color: #2ebaee;
+	line-height: 44px;
+	font-weight: bold;
+	border: 1px solid;
+}
+
+/*-----------------------------------------------category----------------------------------------------------*/
+
+div.category{
+	height: auto;
+	max-width: 2000px;
+}
+
+
+div.category a.button_category_1{
+	display: block;	
+	max-width: 100%;
+	height: auto;
+	text-align: center;
+	text-decoration: none;	
+	color: #ffffff;
+	/*font-size: 48px;*/
+	font-size: calc(24px + 24 * (100vw / 2000));
+	font-weight: bold;	
+	background-image: url(../img/Mac_book_black.png); 
+	background-repeat: no-repeat;
+	background-position: top center;
+	padding-top: 160px;	
+	padding-bottom: 158px;	
+}
+div.category a.button_category_1:hover{
+	display: block;	
+	max-width: 100%;
+	height: auto;
+	text-align: center;
+	text-decoration: none;	
+	color: #ffffff;
+	/*font-size: 48px;*/
+	font-size: calc(24px + 24 * (100vw / 2000));
+	font-weight: bold;	
+	background-image: url(../img/Mac_book_blue.png); 
+	background-repeat: no-repeat;
+	background-position: top center;
+	padding-top: 160px;	
+	padding-bottom: 158px;		
+}
+
+div.category a.button_category_2{
+	display: block;	
+	max-width: 100%;
+	height: auto;
+	text-align: center;
+	text-decoration: none;	
+	color: #ffffff;
+	/*font-size: 48px;*/
+	font-size: calc(24px + 24 * (100vw / 2000));
+	font-weight: bold;	
+	background-image: url(../img/conference_hall_black.png); 
+	background-repeat: no-repeat;
+	background-position: top center;
+	padding-top: 160px;	
+	padding-bottom: 158px;	
+}
+div.category a.button_category_2:hover{
+	display: block;	
+	max-width: 100%;
+	height: auto;
+	text-align: center;
+	text-decoration: none;	
+	color: #ffffff;
+	/*font-size: 48px;*/
+	font-size: calc(24px + 24 * (100vw / 2000));
+	font-weight: bold;	
+	background-image: url(../img/conference_hall_blue.png); 
+	background-repeat: no-repeat;
+	background-position: top center;
+	padding-top: 160px;	
+	padding-bottom: 158px;	
+}
+
+div.category a.button_category_3{
+	display: block;	
+	max-width: 100%;
+	height: auto;
+	text-align: center;
+	text-decoration: none;	
+	color: #ffffff;
+	/*font-size: 48px;*/
+	font-size: calc(24px + 24 * (100vw / 2000));
+	font-weight: bold;	
+	background-image: url(../img/Mc_keyboard_black.png); 
+	background-repeat: no-repeat;
+	background-position: top center;
+	padding-top: 160px;	
+	padding-bottom: 158px;		
+}
+div.category a.button_category_3:hover{
+	display: block;	
+	max-width: 100%;
+	height: auto;
+	text-align: center;
+	text-decoration: none;	
+	color: #ffffff;
+	/*font-size: 48px;*/
+	font-size: calc(24px + 24 * (100vw / 2000));
+	font-weight: bold;	
+	background-image: url(../img/Mc_keyboard_blue.png); 
+	background-repeat: no-repeat;
+	background-position: top center;
+	padding-top: 160px;	
+	padding-bottom: 158px;	
+}
+
+div.category a.button_category_4{
+	display: block;	
+	max-width: 100%;
+	height: auto;
+	text-align: center;
+	text-decoration: none;	
+	color: #ffffff;
+	/*font-size: 48px;*/
+	font-size: calc(24px + 24 * (100vw / 2000));
+	font-weight: bold;	
+	background-image: url(../img/notepad_pen_black.png); 
+	background-repeat: no-repeat;
+	background-position: top center;
+	padding-top: 160px;	
+	padding-bottom: 158px;	
+}
+div.category a.button_category_4:hover{
+	display: block;	
+	max-width: 100%;
+	height: auto;
+	text-align: center;
+	text-decoration: none;	
+	color: #ffffff;
+	/*font-size: 48px;*/
+	font-size: calc(24px + 24 * (100vw / 2000));
+	font-weight: bold;	
+	background-image: url(../img/notepad_pen_blue.png); 
+	background-repeat: no-repeat;
+	background-position: top center;
+	padding-top: 160px;	
+	padding-bottom: 158px;	
+}
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------CHEK-OUR-AWESOME-TEAM----------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+
+div.conteiner3{
+	height: auto;
+	max-width: 2000px;		
+}
+
+section.team{
+	height: auto;
+	max-width: 1300px;
+	margin: 0 auto;	
+}
+
+div.team_1 h1{
+	/*font-size: 72px;*/
+	font-size: calc(34px + 38 * (100vw / 2000));
+	padding-top: 82px;
+	font-weight: bold;
+}
+
+div.team_1 h1 span{
+	color: #2ebaee;
+	/*font-size: 72px;*/
+	font-size: calc(34px + 38 * (100vw / 2000));
+	font-weight: bold;
+}
+
+div.team_1 div img.John_Doe-img-adaptive{
+	display: block;
+	margin: 0 auto;
+	padding-top: 34px;
+	max-width: 100%;
+	height: auto;
+}
+div.team_1 div img.Paul_Kowalsy-img-adaptive{
+	display: block;
+	margin: 0 auto;
+	padding-top: 34px;
+	max-width: 100%;
+	height: auto;
+}
+div.team_1 div img.Emilly_Williams-img-adaptive{
+	display: block;
+	margin: 0 auto;
+	padding-top: 34px;
+	max-width: 100%;
+	height: auto;
+}
+div.team_1 div img.Patricia_Green-img-adaptive{
+	display: block;
+	margin: 0 auto;
+	padding-top: 34px;
+	max-width: 100%;
+	height: auto;
+}
+
+div.team_1 h3{
+	/*font-size: 36px;*/
+	font-size: calc(24px + 12 * (100vw / 2000));
+	font-weight: 600;
+	text-align: center;
+	margin-top: 24px;
+	margin-bottom: 5px;
+}
+div.team_1 p{
+	font-size: 14px;
+	font-size: calc(12px + 2 * (100vw / 2000));
+	font-weight: 500;
+	color: #8f8f8f;
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 26px;
+}
+
+div.team_1 a.button5{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	background: #2ebaee;
+	height: 45px;
+	width: 150px;
+	border-radius: 55px;
+	font-size: 14px;
+	color: #ffffff;
+	line-height: 44px;
+	font-weight: bold;
+	margin: 0 auto;
+	margin-bottom: 115px;
+}
+div.team_1 a.button5:hover{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	background: #ffffff;
+	height: 45px;
+	width: 150px;
+	border-radius: 55px;
+	font-size: 14px;
+	color: #2ebaee;
+	line-height: 44px;
+	font-weight: bold;
+	margin: 0 auto;
+	border: 1px solid;	
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------CONTACT-US-(footer)-------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------*/
+
+div.conteiner4{
+	max-height: 860px;
+	max-width: 2000px;	
+}
+
+
+section.contacts{
+	min-height: 724px;
+	max-width: 2000px;
+	background-image: url(../img/backgr_contact.jpg); /*фоновая карттинка в HEADER*/
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin: 0 auto; /*размещение по цетру с адаптивной версткой!!!!!!!!!!!!!!!!!!!!!!!*/
+}
+
+div.contact_us{
+	max-width: 1300px;
+	margin: 0 auto;
+	padding-top: 134px;
+	height: 455px;	
+}
+
+div.cont_w_us h1.cont_w_us-adaptive{
+	color: #ffffff;
+	font-weight: bold;
+	/*font-size: 72px;*/
+	font-size: calc(30px + 42 * (100vw / 2000)); 
+	margin: 0 auto ;					
+	position: relative;						
+	top: -8px;							
+	text-align: left;		
+}
+
+div.cont_w_us p.address{
+	color: #878787;
+	/*font-size: 18px;*/
+	font-size: calc(10px + 8 * (100vw / 2000));
+	margin: 0 auto ;					
+	position: relative;						
+	top: 40px;							
+	text-align: left;	
+}
+
+div.cont_w_us p.phone{
+	color: #878787;
+	/*font-size: 30px;*/
+	font-size: calc(18px + 12 * (100vw / 2000));	
+	margin: 0 auto;
+	position: relative;
+	top: 62px;	
+	text-align: left;
+}
+
+div.cont_w_us p.e-mail{
+	color: #878787;
+	/*font-size: 30px;*/
+	font-size: calc(18px + 12 * (100vw / 2000));
+	margin: 0 auto;
+	position: relative;
+	top: 75px;
+	text-align: left;	
+}
+
+div.cont_w_us p.phone span, p.e-mail span{
+	color: #2ebaee;
+}	
+
+
+
+div.cont_w_us ul{
+	list-style-type: none;	
+	margin-top: 140px;
+	padding-left: 0px;
+}
+
+div.cont_w_us ul li{
+	display: inline-block;
+	margin-right: 31px;
+	height: 55px;
+	max-width: 55px;
+	border-radius: 27px;
+}
+
+div.cont_w_us ul.list_2 li:hover{
+	background: rgba(13, 190, 211, .60);
+}
+
+
+
+div.cont_w_us ul li.twitter{
+	background: #55acee;
+}
+div.cont_w_us ul li.twitter img.WD{
+	padding: 19px 17px;
+}
+
+div.cont_w_us ul li.facebook{
+	background: #3b5998;
+}
+div.cont_w_us ul li.facebook img.FB{
+	padding: 19px 24px;
+}
+
+div.cont_w_us ul li.pinterest{
+	background: #cc2127;
+}
+div.cont_w_us ul li.pinterest img.P{
+	padding: 19px 21px;
+}
+
+div.cont_w_us ul li.google{
+	background: #dd4b39;
+}
+div.cont_w_us ul li.google img.Google{
+	padding: 19px 18px;
+}
+
+div.cont_w_us ul li.e-mail{
+	background: #e23047;
+}
+div.cont_w_us ul li.e-mail img.EM{
+	padding: 20px 18px;
+}
+
+/*----------------------------------------------web_form----------------------------------------------------*/
+
+div.web_form{
+	margin-top: 0px;
+}
+
+div.web_form input[type="text"]{
+	width: 99%;
+	min-height: 60px;
+	background: none;
+	border-radius: 6px;
+	border: 1px solid #535353;
+	color: #ffffff;
+	/*font-size: 19px;*/
+	font-size: calc(14px + 5 * (100vw / 2000));
+	display: block;
+	margin: 0px auto 20px auto;
+	font-family: Montserrat;
+}
+
+input[type="e-mail"]{
+	width: 99%;
+	min-height: 60px;
+	background: none;
+	border-radius: 6px;
+	border: 1px solid #535353;
+	color: #ffffff;
+	/*font-size: 19px;*/
+	font-size: calc(14px + 5 * (100vw / 2000));
+	display: block;
+	margin: 20px auto;
+	font-family: Montserrat;
+}
+
+div.web_form textarea{
+	width: 99%;
+	min-height: 200px;
+	background: none;
+	border-radius: 6px;
+	border: 1px solid #535353;
+	color: #ffffff;
+	/*font-size: 19px;*/
+	font-size: calc(14px + 5 * (100vw / 2000));
+	display: block;
+	margin: 0 auto;
+	resize: none; /*запрещает масштабировние области текста!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+	font-family: Montserrat;
+}
+
+div.web_form a.button6{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	background: #2ebaee;
+	height: 45px;
+	max-width: 150px;
+	border-radius: 55px;
+	font-size: 14px;
+	color: #ffffff;
+	line-height: 44px;
+	font-weight: bold;
+	margin: 32px auto;
+	border: 1px solid;
+}
+
+div.web_form a.button6:hover{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	background: #ffffff;
+	height: 45px;
+	max-width: 150px;
+	border-radius: 55px;
+	font-size: 14px;
+	color: #2ebaee;
+	line-height: 44px;
+	font-weight: bold;
+	margin: 32px auto;
+	border: 1px solid;
+}
+
+/*----------------------------------------------Footer-(Copyright)---------------------------------------------*/
+
+
+footer.footer{
+	height: 136px;
+	max-width: 2000px;
+	margin: 0 auto;
+	background-color: rgb(0, 0, 0);
+}
+
+div.menu_copyright{
+	max-width: 1300px;
+	margin: 0 auto;
+	height: 136px;
+
+}
+
+div.menu ul.list_3-adaptive{
+	list-style-type: none;	
+	padding-left: 0px;
+	margin: 0 auto;	
+	height: 136px;
+	/*font-size: 14px;*/
+	font-size: calc(9px + 5 * (100vw / 2000));	
+}	
+
+div.menu ul.list_3-adaptive li{
+	color: #b2b2b2;
+	display: inline-block;	
+	position: relative;					
+	top: 61px;
+}
+
+div.menu ul.list_3-adaptive li a{
+	color: #b2b2b2;
+	text-decoration: none;
+	/*font-size: 14px;*/
+	font-weight: bold;
+	padding-right: 16px;
+				
+}
+
+div.menu ul.list_3-adaptive li a:hover{
+	color: #2ebaee;
+	text-decoration: underline;
+	/*font-size: 14px;*/
+	font-weight: bold;
+	padding-right: 16px;
+		
+}
+
+/*--------------------------------------------*/
+
+div.copyright{
+	height: 136px;
+}
+
+div.copyright p.copyright-adaptive{
+	color: #ffffff;
+	/*font-size: 14px;*/
+	font-size: calc(9px + 5 * (100vw / 2000));
+	position: relative;					
+	top: 61px;
+	text-align: right;
+	margin: 0 auto;
+}			 								
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------Breakpoints------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/* Экстрамалые девайсы («портретные телефоны», < 576px)-------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 575.98px) { 
+
+/*--------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------MENU---------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+
+	header div.menu a.LOGO img{
+		padding-left: 88px;
+	}
+
+	header nav ul li a {
+		font-size: calc(14px + (4 + 4 + 0.7) * (100vw - 320px) / 2000);
+	}
+	div.search-box input.search-text {
+		font-size: calc(14px + (4 + 4 + 0.7) * (100vw - 320px) / 2000);
+	}
+
+
+/*-------------------call-to-action------------------*/
+
+	header div.call-to-action h1{
+		padding-left: 15px;
+		padding-right: 15px;		
+		margin-top: 230px;
+		/*font-size: 48px;*/
+		font-size: calc(48px + (24 + 24 * 0.7) * (100vw - 320px) / 2000);
+	}
+
+	header div.call-to-action p{
+		padding-left: 50px;
+		padding-right: 50px;
+		/*font-size: 16px;*/
+		font-size: calc(16px + (8 + 8 * 0.7) * (100vw - 320px) / 2000);
+	}
+
+	/*div.search-box input.search-text {
+		margin-left: 320px;
+		width: 30%;
+	}*/
+
+	/*header div.call-to-action h1 {
+		margin-top: 180px;
+	}*/
+	/*header div.call-to-action p{
+		padding-left: 140px;
+		padding-right: 140px;
+	}*/
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------OUR SERVICES----------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+
+	div.container1{
+		max-width: 2100px;
+		height: 2240px;
+		background-image: url(../img/BackGr_Srv_2.jpg);
+	}
+
+	div.container1_1{
+		max-width: 1300px;
+		height: auto;
+		margin: 0 auto;
+		padding-bottom: 0px;
+	}
+
+	section.Our_services h2{
+		color: #242424;
+		/*font-size: 40px;*/
+		font-size: calc(32px + (16 + 16 * 0.7) * (100vw - 320px) / 2000);
+		text-align: center;
+		padding-top: 25px;
+		border-bottom: 3px solid #e7e7e7;
+		padding-bottom: 25px;
+		margin: 0 auto;
+	}
+
+	/*section.Our_services div.services div{
+		margin-top: 20px; 
+		padding-left: 126px;  
+	}*/
+
+
+	section.Our_services div.services div{
+		margin-top: 44px; 
+		padding-left: 38px;  
+	}
+
+	div.services div h3 {
+		font-size: calc(18px + (6 + 6 * 0.7) * (100vw - 320px ) / 2000);
+	}
+	div.services div p {
+		font-size: calc(12px + (2 + 2 * 0.7) * (100vw - 320px ) / 2000);
+	}
+
+
+	/*div.services div h3.Lamp_h{
+		color: #ffffff;
+	}
+
+	div.services div p.Lamp_p{
+		color: #ffffff;
+	}*/
+
+	div.services div img.RD{
+		display: block;
+		margin-bottom: 49px;
+	}
+
+	div.services div img.Lock{
+		display: block;
+		margin-bottom: 49px;
+		padding-top: 7px;
+	}
+
+	div.services div img.TV{
+		display: block;
+		margin-bottom: 49px;
+		padding-top: 14px;
+	}
+
+	div.services div  img.Lamp{
+		display: block;
+		margin-bottom: 49px;
+		padding-top: 11px;
+	}
+
+	div.services_1 a.button1{
+		margin: 45px auto 85px auto;
+		background-color: #ffffff;
+		color: #2ebaee;
+	}
+	div.services_1 a.button1:hover {
+		margin: 45px auto 85px auto;
+		background-color: #2ebaee;
+		color: #ffffff;
+	}
+
+/*------------------------------------*/
+
+	div.services_2 div.services-2{
+		padding-left: 10px;
+		max-width: 360px;
+		margin: 60px auto;
+		padding-right: 10px;
+	}
+
+	div.services_2 h3{
+		/*font-size: 32px;*/
+		font-size: calc(22px + (14 + 14 * 0.7) * (100vw - 320px ) / 2000);		
+		margin-top: 0px;
+		text-align: left;
+		color: #ffffff;
+	}
+	div.services_2 p {
+		/*font-size: 8px;*/
+		font-size: calc(8px + (6 + 6 * 0.7) * (100vw - 320px ) / 2000);		
+		margin-top: 9px;
+		max-width: 520px;
+		text-align: left;
+		color: #ffffff;
+	}
+
+	div.services_2 a.button2 {
+		height: 36px;
+		width: 115px;
+		border-radius: 55px;
+		font-size: 10px;
+		line-height: 36px;
+		margin: 40px auto 50px auto;
+		background: #ffffff;
+		color: #2ebaee;
+	}
+	div.services_2 a.button2:hover {
+		height: 36px;
+		width: 115px;
+		border-radius: 55px;
+		font-size: 10px;
+		line-height: 36px;
+		margin: 40px auto 50px auto; 
+		background: #2ebaee;
+		color: #ffffff;
+	}
+
+	div.services_2 div.Mc_PC img.PC_img-adaptive{
+		display: block;
+		margin: 0 auto;	
+		max-width: 100%; /*адаптирует размер картинок к разрешениям браузера!!!!!!!!!!!!!!!!!!!!!!*/
+		height: auto;	
+	}
+
+	/*------------------------------------*/
+
+	div.services_3{
+		margin-top: 0px;
+	}
+
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------MAN-&-DESK+CATEGORY----------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+	/*div.conteiner2{
+		max-height: 2768px;
+	}*/
+
+
+	div.man_desk div.img-man_desk{
+		width: 100%;
+	}
+
+	div.man_desk{
+		max-height: 910px;
+		max-width: 576px;
+	}
+
+	div.man_desk div div.text{
+		margin: 45px auto;
+		max-width: 380px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+
+	div.man_desk h3{
+		color: #242424;
+		/*font-size: 42px;*/
+		font-size: calc(22px + (50 + 50 * 0.7) * (100vw - 320px ) / 2000);
+		font-weight: 600; 
+		margin-bottom: 0px;
+		padding-left: 0px;
+	}
+	div.man_desk p{
+		color: #878787;
+		/*font-size: 12px;*/
+		font-size: calc(8px + (6 + 6 * 0.7) * (100vw - 320px ) / 2000);
+		line-height: 2.1;
+		/*max-width: 510px;*/
+		font-weight: bold;
+		margin-top: 30px;
+		margin-bottom: 68px;
+		padding-left: 0px;
+	}
+
+
+	div.man_desk a.button4{
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		background: #2ebaee;
+		height: 36px;
+		width: 115px;
+		border-radius: 55px;
+		font-size: 10px;
+		color: #ffffff;
+		line-height: 36px;
+		font-weight: bold;
+		border: 1px solid;
+		margin: 30px auto;
+	}
+	div.man_desk a.button4:hover{
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		background: #ffffff;
+		height: 36px;
+		width: 115px;
+		border-radius: 55px;
+		font-size: 10px;
+		color: #2ebaee;
+		line-height: 36px;
+		font-weight: bold;
+		border: 1px solid;
+		margin: 30px auto;
+	}
+
+/*--------------------------------------*/
+
+	div.conteiner2 {
+    	max-height: 2500px;
+	}
+	div.category{
+		max-height: 2000px;		
+	}
+
+	div.category a.button_category_1, div.category a.button_category_2, div.category a.button_category_3, div.category a.button_category_4{
+		font-size: calc(30px + (18 + 18 * 0.7) * (100vw - 320px) / 2000);
+		padding-top: 176px;
+		padding-bottom: 174px;
+	}
+	div.category a.button_category_1:hover, div.category a.button_category_2:hover, div.category a.button_category_3:hover, div.category a.button_category_4:hover{
+		font-size: calc(30px + (18 + 18 * 0.7) * (100vw - 320px) / 2000);
+		padding-top: 176px;
+		padding-bottom: 174px;
+	}
+
+	div.category a.button_category_1 {
+		background-image: url(../img/Mac_book_black_2.png);
+	}
+	div.category a.button_category_1:hover {
+		background-image: url(../img/Mac_book_blue_2.png);
+	}
+	div.category a.button_category_2 {		
+		background-image: url(../img/conference_hall_black_2.png);
+	}
+	div.category a.button_category_2:hover{
+		background-image: url(../img/conference_hall_blue_2.png);
+	}
+	div.category a.button_category_3 {
+		background-image: url(../img/Mc_keyboard_black_2.png);
+	}
+	div.category a.button_category_3:hover {
+		background-image: url(../img/Mc_keyboard_blue_2.png);
+	}
+	div.category a.button_category_4 {
+		background-image: url(../img/notepad_pen_black_2.png);
+	}
+	div.category a.button_category_4:hover {
+		background-image: url(../img/notepad_pen_blue_2.png);
+	}
+	
+	
+	
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------CHEK-OUR-AWESOME-TEAM----------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+	div.conteiner3{
+		height: 1978px;
+	}
+	
+	div.team_1 h1{
+		padding-left: 25px;
+		/*font-size: 54px;*/
+		font-size: calc(34px + (38 + 38 * 0.7) * (100vw - 320px ) / 2000);
+		padding-top: 50px;
+		margin-bottom: 0px;
+	}	
+
+	div.team_1 h1 span{
+		/*font-size: 54px;*/
+		font-size: calc(34px + (38 + 38 * 0.7) * (100vw - 320px ) / 2000);
+	}
+
+
+	div.team_1 h3{
+		font-size: calc(24px + (12 + 12* 0.7) * (100vw - 320px) / 2000);
+	}
+	div.team_1 p{
+		font-size: calc(12px + (2 + 2 * 0.7) * (100vw - 320px) / 2000);
+	}
+
+
+	div.team_1 a.button5{
+		margin-bottom: 40px;
+	}
+	div.team_1 a.button5:hover{
+		margin-bottom: 38px;
+	}
+	
+
+/*------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------CONTACT-US-(footer)-------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------*/
+
+	div.contact_us{
+		max-width: 1300px;
+		margin: 0 auto;
+		padding-top: 0px;
+		padding-left: 15px;
+		padding-right: 15px;
+		height: 724px;
+	}
+
+	div.cont_w_us h1.cont_w_us-adaptive{
+		/*font-size: 60px;*/
+		font-size: calc(100vw / 10);
+		top: 15px;		
+	}
+
+	div.cont_w_us p.address{
+		/*font-size: 18px;*/
+		font-size: calc(100vw / 32);
+	}
+
+	div.cont_w_us p.phone{
+		/*font-size: 22px;*/
+		font-size: calc(100vw / 26);
+	}
+
+	div.cont_w_us p.e-mail{
+		/*font-size: 22px;*/
+		font-size: calc(100vw / 26);
+	}
+
+
+
+	div.cont_w_us h1.cont_w_us-adaptive {
+		font-size: calc(34px + (38 + 38 * 0.7) * (100vw - 320px) / 2000);
+	}
+	div.cont_w_us p.address {
+		font-size: calc(11px + (7 + 7 * 0.7) * (100vw - 320px) / 2000);
+	}
+	div.cont_w_us p.phone{
+		font-size: calc(21px + (9 + 9 * 0.7) * (100vw - 320px) / 2000);
+	}
+	div.cont_w_us p.e-mail {
+		font-size: calc(21px + (9 + 9 * 0.7) * (100vw - 320px) / 2000);
+	}
+
+
+	div.cont_w_us ul{
+		list-style-type: none;
+		margin-top: 100px;
+		padding-left: 0px;
+	}
+
+	div.cont_w_us ul li{
+		margin-right: 9px;
+		height: 40px;
+	    max-width: 40px;
+    	border-radius: 27px;
+	}
+
+	div.cont_w_us ul.list_2 li:hover{
+		background: rgba(13, 190, 211, .60);
+	}
+
+	div.cont_w_us ul li.twitter{
+		background: #55acee;
+	}
+	div.cont_w_us ul li.twitter img.WD{
+		padding: 12px 10px;
+	}
+
+	div.cont_w_us ul li.facebook{
+		background: #3b5998;
+	}
+	div.cont_w_us ul li.facebook img.FB{
+		padding: 12px 16px;
+	}
+
+	div.cont_w_us ul li.pinterest{
+		background: #cc2127;
+	}
+	div.cont_w_us ul li.pinterest img.P{
+		padding: 12px 13px;
+	}
+
+	div.cont_w_us ul li.google{
+		background: #dd4b39;
+	}
+	div.cont_w_us ul li.google img.Google{
+		padding: 12px 10px;
+	}
+
+	div.cont_w_us ul li.e-mail{
+		background: #e23047;
+	}
+	div.cont_w_us ul li.e-mail img.EM{
+		padding: 13px 10px;
+	}
+
+		
+/*-------------------------web-form-----------------------------*/
+
+	div.web_form{
+		margin-top: 0px;
+	}
+
+	div.web_form input[type="text"], input[type="e-mail"] {
+		min-height: 34px;
+		/*font-size: 16px;*/
+		font-size: calc(14px + (5 + 5 * 0.7) * (100vw - 320px) / 2000);
+	}
+
+	div.web_form textarea {
+		min-height: 180px;
+		/*font-size: 16px;*/
+		font-size: calc(14px + (5 + 5 * 0.7) * (100vw - 320px) / 2000);
+	}
+
+
+/*----------------------------------------------Footer-(Copyright)---------------------------------------------*/
+
+
+	footer.footer{
+		height: 136px;
+		max-width: 2000px;
+		margin: 0 auto;
+		background-color: rgb(0, 0, 0);
+	}
+
+	div.menu_copyright{
+		max-width: 1300px;
+		margin: 0 auto;
+		height: 68px;
+
+	}
+
+	div.menu ul.list_3-adaptive{
+		list-style-type: none;	
+		padding-left: 0px;
+		margin: 0 auto;	
+		height: 68px;
+		/*font-size: 14px;*/
+		font-size: calc(9px + (5 + 5 * 0.7) * (100vw - 320px) / 2000);
+		
+	}	
+	div.menu ul.list_3-adaptive li{
+		color: #b2b2b2;
+		display: inline-block;	
+		position: relative;					
+		top: 30px;
+		padding-left: 15px;
+	}
+
+	div.menu ul.list_3-adaptive li a{
+		color: #b2b2b2;
+		text-decoration: none;
+		/*font-size: 14px;*/
+		font-weight: bold;
+		padding-right: 16px;
+					
+	}
+
+	div.menu ul.list_3-adaptive li a:hover{
+		color: #2ebaee;
+		text-decoration: underline;
+		/*font-size: 14px;*/
+		font-weight: bold;
+		padding-right: 16px;
+			
+	}
+
+	/*--------------------------------------------*/
+
+	div.copyright{
+		height: 68px;
+	}
+
+	div.copyright p.copyright-adaptive{
+		color: #ffffff;
+		/*font-size: 14px;*/
+		font-size: calc(9px + (5 + 5 * 0.7) * (100vw - 320px) / 2000);
+		position: relative;					
+		top: 30px;
+		text-align: right;
+		margin: 0 auto;
+		padding-right: 15px;
+	}			 					
+
+}
+
+
+
+/* Малые девайсы («ландшафтные», >= 575px)--------------------------------------------------------------------------------------------------------------------------*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+
+/*--------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------MENU---------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+
+	header div.call-to-action h1{
+		padding-left: 40px;
+		padding-right: 40px;
+		margin-top: 250px;
+	}
+
+	div.search-box input.search-text {
+		margin-left: 300px;
+		width: 30%;
+	}
+
+	/*header div.call-to-action h1 {
+		margin-top: 180px;
+	}*/
+	header div.call-to-action p{
+		padding-left: 140px;
+		padding-right: 140px;
+	}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------OUR SERVICES----------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+	div.container1{
+		max-width: 2100px;
+		height: 2140px;
+		/*background-image: url(../img/BackGr_Srv_2.jpg);*/
+	}
+
+	div.container1_1{
+		max-width: 1300px;
+		height: auto;
+		margin: 0 auto;
+		padding-bottom: 0px;
+	}
+
+
+	section.Our_services h2{
+		color: #242424;
+		/*font-size: 40px;*/
+		text-align: center;
+		padding-top: 25px;
+		border-bottom: 3px solid #e7e7e7;
+		padding-bottom: 25px;
+		margin: 0 auto;
+	}
+
+	section.Our_services div.services div{
+		margin-top: 20px; 
+		padding-left: 176px;  
+	}
+
+	div.services div img.RD{
+		margin-bottom: 20px;
+	}
+	div.services div img.Lock{
+		margin-bottom: 20px;
+	}
+	div.services div img.TV{
+		margin-bottom: 20px;
+	}
+	div.services div img.Lamp{
+		margin-bottom: 20px;
+	}
+
+	div.services div h3{
+		/*font-size: 16px;*/
+		margin-top: 0px;
+		margin-bottom: 12px;
+	}
+	div.services div p{
+		/*font-size: 10px;*/
+		margin-bottom: 0px;
+	}
+
+	section.Our_services div.services div{
+		margin-top: 20px; 
+		padding-left: 10px;  
+	}
+
+	div.services_1 a.button1 {
+		height: 40px;
+		width: 135px;
+		border-radius: 55px;
+		font-size: 12px;
+		line-height: 40px;
+		margin: 30px auto 30px auto;
+	}
+
+	div.services_1 a.button1:hover {
+		height: 40px;
+		width: 135px;
+		border-radius: 55px;
+		font-size: 12px;
+		line-height: 40px;
+		margin: 30px auto 30px auto;
+	}
+
+	div.services_2{
+		margin-top: 20px;
+		height: 700px;
+	}
+
+	div.services_2 div.Mc_PC img.PC_img-adaptive {
+		margin-left: 0px;
+		max-width: 100%;					
+	}
+	div.services_2 div.services-2{
+		padding-left: 0px;
+		/*max-width: 380px;*/
+		margin: 0 auto;
+	}
+
+	div.services_2 h3{
+		/*font-size: 32px;*/
+		max-width: 380px;		
+		/*margin-top: 0px;*/
+		text-align: left;
+		/*padding-left: 185px;*/
+		margin: 0px auto 0px auto;
+	}
+	div.services_2 p {
+		/*font-size: 12px;*/		
+		/*margin-top: 9px;*/
+		max-width: 380px;
+		text-align: left;
+		/*padding-left: 185px;*/
+		margin: 9px auto 0px auto;
+	}
+	div.services_2 a.button2 {
+		height: 36px;
+		width: 115px;
+		border-radius: 55px;
+		font-size: 10px;
+		line-height: 36px;
+		margin: 40px auto 10px auto;		  	
+	}
+	div.services_2 a.button2:hover {
+		height: 36px;
+		width: 115px;
+		border-radius: 55px;
+		font-size: 10px;
+		line-height: 36px;
+		margin: 40px auto 10px auto; 			   	
+	}
+
+	div.services_3{
+		margin-top: 30px ;
+	}
+
+	div.Mc_MP img.MP_img-adaptive {
+		max-width: 82%;
+		float: none;
+		margin: 0 auto;
+	}
+	div.services_3 div.services-3{
+		padding-left: 0px;
+		/*max-width: 360px;*/
+		/*margin: 0 auto;*/
+	}
+	div.services_3 h3 {
+		/*font-size: 32px;*/		
+		/*margin-top: 32px;*/
+		text-align: left;
+		max-width: 380px;
+		/*padding-left: 185px;*/
+		margin: 32px auto 0px auto;
+	}
+	div.services_3 p{
+		/*font-size: 12px;*/		
+		/*margin-top: 9px;*/
+		max-width: 380px;
+		text-align: left;
+		/*padding-left: 185px;*/
+		margin: 9px auto 0px auto;
+	}
+	div.services_3 a.button3{
+		height: 36px;
+		width: 115px;
+		border-radius: 55px;
+		font-size: 10px;
+		line-height: 36px;
+		margin: 40px auto 0px auto;
+	}
+	div.services_3 a.button3:hover {
+		height: 36px;
+		width: 115px;
+		border-radius: 55px;
+		font-size: 10px;
+		line-height: 36px;
+		margin: 38px auto 0px auto;
+	}
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------MAN-&-DESK+CATEGORY----------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+	div.man_desk div.img-man_desk{
+		width: 100%;
+	}
+
+	div.man_desk{
+		max-height: 910px;
+		max-width: 768px;
+	}
+
+	div.man_desk div div.text{
+		margin: 45px auto;
+		max-width: 380px;
+	}
+
+
+	div.man_desk h3{
+		color: #242424;
+		/*font-size: 42px;*/
+		font-weight: 600; 
+		margin-bottom: 0px;
+		padding-left: 0px;
+	}
+	div.man_desk p{
+		color: #878787;
+		/*font-size: 12px;*/
+		line-height: 2.1;
+		/*max-width: 510px;*/
+		font-weight: bold;
+		margin-top: 30px;
+		margin-bottom: 68px;
+		padding-left: 0px;
+	}
+	div.man_desk a.button4{
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		background: #2ebaee;
+		height: 36px;
+		width: 115px;
+		border-radius: 55px;
+		font-size: 10px;
+		color: #ffffff;
+		line-height: 36px;
+		font-weight: bold;
+		border: 1px solid;
+		margin: 40px auto 20px auto;
+		
+	}
+	div.man_desk a.button4:hover{
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		background: #ffffff;
+		height: 36px;
+		width: 115px;
+		border-radius: 55px;
+		font-size: 10px;
+		color: #2ebaee;
+		line-height: 36px;
+		font-weight: bold;
+		border: 1px solid;
+		margin: 40px auto 20px auto;
+
+	}
+
+/*--------------------------------------*/
+
+
+	div.category{
+		height: auto;
+		max-width: 2000px;
+	}
+
+	
+	div.category a.button_category_1, div.category a.button_category_2, div.category a.button_category_3, div.category a.button_category_4{
+		font-size: calc(28px + (20 + 20 * 0.7) * (100vw - 576px) / 2000);
+		padding-top: 118px;
+		padding-bottom: 116px;
+	}
+	div.category a.button_category_1:hover, div.category a.button_category_2:hover, div.category a.button_category_3:hover, div.category a.button_category_4:hover{
+		font-size: calc(28px + (20 + 20 * 0.7) * (100vw - 576px) / 2000);
+		padding-top: 118px;
+		padding-bottom: 116px;
+	}
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------CHEK-OUR-AWESOME-TEAM----------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+
+	div.conteiner3{
+		height: auto;
+		max-width: 2000px;
+	}
+
+	section.team{
+		max-width: 1300px;
+		margin: 0 auto;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	
+	div.team_1 h3 {
+		max-width: 134px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	div.team_1 a.button5{
+		margin-bottom: 50px;
+	}
+
+/*------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------CONTACT-US-(footer)-------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------*/
+
+	
+	div.contact_us{
+		max-width: 1300px;
+		margin: 0 auto;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	div.cont_w_us h1.cont_w_us-adaptive {
+		font-size: calc(30px + (42 + 42 * 0.7) * (100vw - 576px) / 2000);
+	}
+	div.cont_w_us p.address {
+		font-size: calc(10px + (8 + 8 * 0.7) * (100vw - 576px) / 2000);
+	}
+	div.cont_w_us p.phone{
+		font-size: calc(18px + (12 + 12 * 0.7) * (100vw - 576px) / 2000);
+	}
+	div.cont_w_us p.e-mail {
+		font-size: calc(18px + (12 + 12 * 0.7) * (100vw - 576px) / 2000);
+	}
+
+
+	div.cont_w_us ul li{
+		margin-right: 9px;
+		height: 40px;
+	    max-width: 40px;
+    	border-radius: 27px;
+	}
+
+
+	div.cont_w_us ul li.twitter img.WD{
+		padding: 12px 10px;
+	}
+	div.cont_w_us ul li.facebook img.FB{
+		padding: 12px 16px;
+	}
+	div.cont_w_us ul li.pinterest img.P{
+		padding: 12px 13px;
+	}
+	div.cont_w_us ul li.google img.Google{
+		padding: 12px 10px;
+	}
+	div.cont_w_us ul li.e-mail img.EM{
+		padding: 13px 10px;
+	}
+
+	/*-------------------------web-form-----------------------------*/
+
+	div.web_form{
+		margin-top: 0px;
+	}
+
+	div.web_form input[type="text"], input[type="e-mail"] {
+		min-height: 34px;
+		font-size: 14px;
+	}
+
+	div.web_form textarea {
+		min-height: 240px;
+		font-size: 14px;
+	}
+
+
+/*----------------------------------------------Footer-(Copyright)---------------------------------------------*/
+
+	div.menu ul.list_3-adaptive {
+		font-size: calc(9px + (5 + 5 * 0.7) * (100vw - 576px) / 2000);
+	}
+
+
+/*----------------------------------------------Footer-(Copyright)---------------------------------------------*/
+
+	div.menu_copyright{
+		max-width: 1300px;
+		margin: 0 auto;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	div.copyright p.copyright-adaptive {
+		font-size: calc(9px + (5 + 5 * 0.7) * (100vw - 576px) / 2000);
+	}
+}
+
+
+
+/* Средние девайсы («таблетки», >= 768px) --------------------------------------------------------------------------------------------------------------------------*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+/*--------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------MENU---------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+
+	header div.call-to-action h1{
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	div.search-box input.search-text {
+		margin-left: 390px;
+		width: 30%;
+	}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------OUR SERVICES----------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+	div.container1_1{
+		max-width: 1300px;
+		margin: 0 auto;
+		padding-bottom: 100px;
+	}
+
+	section.Our_services h2{
+		color: #242424;
+		/*font-size: 48px;*/
+		text-align: center;
+		padding-top: 25px;
+		border-bottom: 3px solid #e7e7e7;
+		padding-bottom: 25px;
+		margin: 0 auto;
+	}
+
+	section.Our_services div.services div{
+		margin-top: 20px; 
+		padding-left: 176px;  
+	}
+
+	div.services div img.RD{
+		margin-bottom: 20px;
+	}
+	div.services div img.Lock{
+		margin-bottom: 20px;
+	}
+	div.services div img.TV{
+		margin-bottom: 20px;
+	}
+	div.services div img.Lamp{
+		margin-bottom: 20px;
+	}
+
+	div.services div h3{
+		/*font-size: 16px;*/
+		margin-top: 0px;
+		margin-bottom: 12px;
+	}
+	/*div.services div p{
+		font-size: 10px;
+		margin-bottom: 0px;
+	}*/
+
+	section.Our_services div.services div{
+		margin-top: 20px; 
+		padding-left: 76px;  
+	}
+
+	div.services_1 a.button1 {
+		height: 40px;
+		width: 135px;
+		border-radius: 55px;
+		font-size: 12px;
+		line-height: 40px;
+		margin: 10px auto 52px auto;
+	}
+
+	div.services_1 a.button1:hover {
+		height: 40px;
+		width: 135px;
+		border-radius: 55px;
+		font-size: 12px;
+		line-height: 40px;
+		margin: 10px auto 52px auto;
+	}
+
+	div.services_2 div.Mc_PC img.PC_img-adaptive {
+		margin-left: -40px;
+		max-width: 108%;
+	}
+
+	div.services_2 h3{		
+		margin-top: 0px;
+		padding-left: 5px;
+		padding-top: 12px;
+	}
+	div.services_2 p {
+		/*font-size: 9px;*/		
+		margin-top: 9px;
+		padding-left: 5px;
+	}
+	div.services_2 a.button2 {
+		height: 36px;
+		width: 115px;
+		border-radius: 55px;
+		font-size: 10px;
+		line-height: 36px;
+		margin-top: 34px;
+    	margin-left: 5px;
+	}
+	div.services_2 a.button2:hover {
+		height: 36px;
+		width: 115px;
+		border-radius: 55px;
+		font-size: 10px;
+		line-height: 36px;
+		margin-top: 34px;
+    	margin-left: 5px;
+	}
+
+	div.Mc_MP img.MP_img-adaptive {
+		max-width: 100%;		
+	}
+	div.services_3 div.services-3{
+		padding-left: 0px;
+	}
+	div.services_3 h3 {
+		/*font-size: 22px;*/
+		margin-left: 0px;
+		margin-top: 0px;
+		padding-top: 12px;
+		padding-left: 5px;
+	}
+	div.services_3 p{
+		/*font-size: 9px;*/
+		margin-left: 0px;
+		padding-left: 5px;
+	}
+	div.services_3 a.button3{
+		height: 36px;
+		width: 115px;
+		border-radius: 55px;
+		font-size: 10px;
+		line-height: 36px;
+		margin-top: 34px;
+    	margin-left: 5px;
+	}
+	div.services_3 a.button3:hover {
+		height: 36px;
+		width: 115px;
+		border-radius: 55px;
+		font-size: 10px;
+		line-height: 36px;
+		margin-top: 34px;
+    	margin-left: 5px;
+	}
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------MAN-&-DESK+CATEGORY----------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+	div.man_desk div div.text {
+		margin-top: 5px;
+		margin-left: 5px;
+	}
+
+	div.man_desk h3{
+		color: #242424;
+		/*font-size: 26px;*/
+		font-weight: 600; 
+		margin-bottom: 0px;
+		margin-top: 5px;
+	}
+	div.man_desk p{
+		color: #878787;
+		/*font-size: 9px;*/
+		line-height: 2.1;
+		font-weight: bold;
+		margin-top: 5px;
+		margin-bottom: 10px;
+	}
+	div.man_desk a.button4{
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		background: #2ebaee;
+		height: 36px;
+		width: 115px;
+		border-radius: 55px;
+		font-size: 10px;
+		color: #ffffff;
+		line-height: 36px;
+		font-weight: bold;
+	}
+	div.man_desk a.button4:hover{
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		background: #ffffff;
+		height: 36px;
+		width: 115px;
+		border-radius: 55px;
+		font-size: 10px;
+		color: #2ebaee;
+		line-height: 36px;
+		font-weight: bold;
+		border: 1px solid;
+	}
+
+/*--------------------------------------*/
+
+	div.category{
+		height: auto;
+		max-width: 1000px;
+	}
+
+	
+	div.category a.button_category_1, div.category a.button_category_2, div.category a.button_category_3, div.category a.button_category_4{
+		font-size: calc(32px + (16 + 16 * 0.7) * (100vw - 768px) / 2000);
+		padding-top: 118px;
+		padding-bottom: 116px;
+	}
+	div.category a.button_category_1:hover, div.category a.button_category_2:hover, div.category a.button_category_3:hover, div.category a.button_category_4:hover{
+		font-size: calc(32px + (16 + 16 * 0.7) * (100vw - 768px) / 2000);
+		padding-top: 118px;
+		padding-bottom: 116px;
+	}
+
+	
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------CHEK-OUR-AWESOME-TEAM----------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+
+	div.conteiner3{
+		height: auto;
+		max-width: 2000px;
+	}
+
+	section.team{
+		max-width: 1300px;
+		margin: 0 auto;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	div.team_1 h3 {
+		max-width: 138px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+
+/*------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------CONTACT-US-(footer)-------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------*/
+
+	div.contact_us{
+		max-width: 1300px;
+		margin: 0 auto;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	div.cont_w_us ul li{
+		display: inline-block;
+		margin-right: 12px;
+	}	
+
+/*----------------------------------------------Footer-(Copyright)---------------------------------------------*/
+
+	div.menu_copyright{
+		max-width: 1300px;
+		margin: 0 auto;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	div.cont_w_us h1.cont_w_us-adaptive {
+		font-size: calc(40px + (32 + 32 * 0.7) * (100vw - 768px) / 2000);
+	}	
+}
+
+
+
+/* Большие девайсы (большие десктопы, >= 992px)---------------------------------------------------------------------------------------------------------------------*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+
+/*--------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------MENU---------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+
+	header div.call-to-action h1{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------OUR SERVICES----------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+	div.container1_1{
+		max-width: 1300px;
+		margin: 0 auto;
+		padding-bottom: 100px;
+	}
+
+	section.Our_services h2{
+		color: #242424;
+		/*font-size: 48px;*/
+		text-align: center;
+		padding-top: 30px;
+		border-bottom: 3px solid #e7e7e7;
+		padding-bottom: 30px;
+		margin: 0 auto;
+	}
+
+	section.Our_services div.services div{
+		margin-top: 20px; 
+		padding-left: 120px;  
+	}
+
+	div.services div img.RD{
+		margin-bottom: 20px;
+	}
+	div.services div img.Lock{
+		margin-bottom: 20px;
+	}
+	div.services div img.TV{
+		margin-bottom: 20px;
+	}
+	div.services div img.Lamp{
+		margin-bottom: 20px;
+	}
+
+	div.services div h3{
+		/*font-size: 20px;*/
+		margin-top: 0px;
+		margin-bottom: 12px;
+	}
+	/*div.services div p{
+		font-size: 12px;
+	}*/
+
+	/*------------------------------------*/
+
+	div.services_1 a.button1{
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		background: #2ebaee;
+		height: 40px;
+		width: 135px;
+		border-radius: 55px;
+		font-size: 12px;
+		color: #ffffff;
+		line-height: 40px;
+		margin: 10px auto 90px auto;
+		font-weight: bold;	
+	}
+
+
+	div.services_1 a.button1:hover{
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		background: #ffffff;
+		height: 40px;
+		width: 135px;
+		border-radius: 55px;
+		font-size: 12px;
+		color: #2ebaee;
+		line-height: 40px;
+		margin: 10px auto 90px auto;
+		border: 1px solid;	
+	}
+
+	/*------------------------------------*/
+
+	div.services_2{
+		padding-top: 0px;	
+	}
+
+	div.services_2 h3{
+		color: #242424;
+		/*font-size: 26px;*/
+		margin-top: 36px;
+		font-weight: 600;
+		padding-left: 15px;
+		letter-spacing: -1px;
+	}
+
+	div.services_2 p{
+		color: #878787;
+		/*font-size: 10px;*/
+		max-width: 520px;
+		font-weight: bold;
+		margin-top: 10px;
+		line-height: 2.1;
+		padding-left: 15px;
+	}
+
+	div.services_2 a.button2{
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		background: #2ebaee;
+		height: 36px;
+		width: 115px;
+		border-radius: 55px;
+		font-size: 10px;
+		color: #ffffff;
+		line-height: 36px;
+		font-weight: bold;
+		margin-top: 42px;
+		margin-left: 15px;
+	}
+	div.services_2 a.button2:hover{
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		background: #ffffff;
+		height: 36px;
+		width: 115px;
+		border-radius: 55px;
+		font-size: 10px;
+		color: #2ebaee;
+		line-height: 36px;
+		font-weight: bold;
+		margin-top: 42px;
+		border: 1px solid;
+		margin-left: 15px;
+	}
+
+	div.services_2 div.Mc_PC img.PC_img-adaptive{
+		display: block;
+		margin-left: -54px;	
+		max-width: 109%; /*адаптирует размер картинок к разрешениям браузера!!!!!!!!!!!!!!!!!!!!!!*/
+		height: auto;	
+	}
+
+	/*------------------------------------*/
+
+	div.services_3{
+		margin-top: 258px;
+	}
+	div.services_3 div.services-3{
+		padding-left: 60px;
+	}
+
+	div.services_3 div.Mc_MP img.MP_img-adaptive{
+		display: block;
+		float: right;	
+		max-width: 100%; /*адаптирует размер картинок к разрешениям браузера!!!!!!!!!!!!!!!!!!!!!!*/
+		height: auto;
+	}
+
+	div.services_3 h3{
+		color: #ffffff;
+		/*font-size: 26px;*/
+		margin-top: 78px;
+		font-weight: 600;
+		/*word-spacing: -5px;*/
+		letter-spacing: -1px;
+	}
+
+	div.services_3 p{
+		color: #ffffff;
+		/*font-size: 10px;*/
+		font-weight: bold;
+		max-width: 530px;
+		line-height: 2.1;
+	}
+
+
+	div.services_3 a.button3{
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		background: #ffffff;
+		height: 36px;
+		width: 115px;
+		border-radius: 55px;
+		font-size: 10px;
+		color: #2ebaee;
+		line-height: 36px;
+		font-weight: bold;
+		margin-top: 45px;
+	}
+	div.services_3 a.button3:hover{
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		background: #2ebaee;
+		height: 36px;
+		width: 115px;
+		border-radius: 55px;
+		font-size: 10px;
+		color: #ffffff;
+		line-height: 36px;
+		font-weight: bold;
+		margin-top: 45px;
+		border: 1px solid #ffffff;
+	}
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------MAN-&-DESK+CATEGORY----------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+	div.man_desk div div.text {
+		margin-top: 18px;
+		margin-left: 60px;
+	}
+
+	div.man_desk h3{
+		color: #242424;
+		/*font-size: 36px;*/
+		font-weight: 600; 
+		margin-bottom: 0px;
+		margin-top: 18px;
+	}
+	div.man_desk p{
+		color: #878787;
+		/*font-size: 10px;*/
+		line-height: 2.1;
+		font-weight: bold;
+		margin-top: 18px;
+		margin-bottom: 22px;
+	}
+	div.man_desk a.button4{
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		background: #2ebaee;
+		height: 36px;
+		width: 115px;
+		border-radius: 55px;
+		font-size: 10px;
+		color: #ffffff;
+		line-height: 36px;
+		font-weight: bold;
+	}
+	div.man_desk a.button4:hover{
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		background: #ffffff;
+		height: 36px;
+		width: 115px;
+		border-radius: 55px;
+		font-size: 10px;
+		color: #2ebaee;
+		line-height: 36px;
+		font-weight: bold;
+		border: 1px solid;
+	}
+
+/*--------------------------------------*/
+
+	div.category{
+		height: auto;
+		max-width: 1300px;
+	}
+
+
+	div.category a.button_category_1, div.category a.button_category_2, div.category a.button_category_3, div.category a.button_category_4{
+		font-size: calc(26px + (22 + 22 * 0.7) * (100vw - 992px) / 2000);
+		padding-top: 112px;
+		padding-bottom: 110px;
+	}
+	div.category a.button_category_1:hover, div.category a.button_category_2:hover, div.category a.button_category_3:hover, div.category a.button_category_4:hover{
+		font-size: calc(26px + (22 + 22 * 0.7) * (100vw - 992px) / 2000);
+		padding-top: 112px;
+		padding-bottom: 110px;
+	}
+
+	
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------CHEK-OUR-AWESOME-TEAM----------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+
+	div.conteiner3{
+		height: auto;
+		max-width: 2000px;
+	}
+
+	section.team{
+		max-width: 1300px;
+		margin: 0 auto;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	div.team_1 h3 {
+		max-width: 138px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+/*------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------CONTACT-US-(footer)-------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------*/
+
+	div.contact_us{
+		max-width: 1300px;
+		margin: 0 auto;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+
+/*----------------------------------------------Footer-(Copyright)---------------------------------------------*/
+
+	div.menu_copyright{
+		max-width: 1300px;
+		margin: 0 auto;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+
+
+/* Большие девайсы (большие десктопы, >= 1200px)--------------------------------------------------------------------------------------------------------------------*/
+@media (min-width: 1200px) and (max-width: 1399.98px) { 
+
+/*--------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------MENU---------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+
+	header div.call-to-action h1{
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------OUR SERVICES----------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+	
+	div.container1_1{
+		max-width: 1300px;
+		margin: 0 auto;
+		padding-bottom: 100px;
+	}
+
+	section.Our_services h2{
+		color: #242424;
+		/*font-size: 48px;*/
+		text-align: center;
+		padding-top: 30px;
+		border-bottom: 3px solid #e7e7e7;
+		padding-bottom: 30px;
+		margin: 0 auto;
+	}
+
+	section.Our_services div.services div{
+		margin-top: 20px; 
+		padding-left: 160px;  
+	}
+
+	/*------------------------------------*/
+
+	div.services_1 a.button1{
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		background: #2ebaee;
+		height: 40px;
+		width: 135px;
+		border-radius: 55px;
+		font-size: 12px;
+		color: #ffffff;
+		line-height: 40px;
+		margin: 10px auto 90px auto;
+		font-weight: bold;	
+	}
+	div.services_1 a.button1:hover{
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		background: #ffffff;
+		height: 40px;
+		width: 135px;
+		border-radius: 55px;
+		font-size: 12px;
+		color: #2ebaee;
+		line-height: 40px;
+		margin: 10px auto 90px auto;
+		border: 1px solid;	
+	}
+
+	/*------------------------------------*/
+
+	div.services_2{
+		padding-top: 0px;	
+	}
+
+	div.services_2 h3{
+		color: #242424;
+		/*font-size: 32px;*/
+		margin-top: 74px;
+		font-weight: 600;
+		padding-left: 15px;
+		letter-spacing: -1px;
+	}
+
+	div.services_2 p{
+		color: #878787;
+		/*font-size: 12px;*/
+		max-width: 520px;
+		font-weight: bold;
+		margin-top: 12px;
+		line-height: 2.1;
+		padding-left: 15px;
+	}
+
+	div.services_2 a.button2{
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		background: #2ebaee;
+		height: 40px;
+		width: 135px;
+		border-radius: 55px;
+		font-size: 12px;
+		color: #ffffff;
+		line-height: 40px;
+		font-weight: bold;
+		margin-top: 42px;
+		margin-left: 15px;
+	}
+	div.services_2 a.button2:hover{
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		background: #ffffff;
+		height: 40px;
+		width: 135px;
+		border-radius: 55px;
+		font-size: 12px;
+		color: #2ebaee;
+		line-height: 40px;
+		font-weight: bold;
+		margin-top: 42px;
+		border: 1px solid;
+		margin-left: 15px;
+	}
+
+	div.services_2 div.Mc_PC img.PC_img-adaptive{
+		display: block;
+		margin-left: -66px;	
+		max-width: 110%; /*адаптирует размер картинок к разрешениям браузера!!!!!!!!!!!!!!!!!!!!!!*/
+		height: auto;	
+	}
+
+	/*------------------------------------*/
+
+	div.services_3{
+		margin-top: 266px;
+	}
+
+	div.services_3 div.Mc_MP img.MP_img-adaptive{
+		display: block;
+		float: right;	
+		max-width: 100%; /*адаптирует размер картинок к разрешениям браузера!!!!!!!!!!!!!!!!!!!!!!*/
+		height: auto;
+	}
+
+	div.services_3 div.services-3{
+		padding-left: 100px;
+		padding-top: 62px;
+	}
+
+	div.services_3 h3{
+		color: #ffffff;
+		/*font-size: 32px;*/
+		margin-top: 0px;
+		font-weight: 600;
+		/*word-spacing: -5px;*/
+		letter-spacing: -1px;
+	}
+
+	div.services_3 p{
+		color: #ffffff;
+		/*font-size: 12px;*/
+		font-weight: bold;
+		max-width: 530px;
+		line-height: 2.1;
+	}
+
+
+	div.services_3 a.button3{
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		background: #ffffff;
+		height: 40px;
+		width: 135px;
+		border-radius: 55px;
+		font-size: 12px;
+		color: #2ebaee;
+		line-height: 40px;
+		font-weight: bold;
+		margin-top: 45px;
+	}
+	div.services_3 a.button3:hover{
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		background: #2ebaee;
+		height: 40px;
+		width: 135px;
+		border-radius: 55px;
+		font-size: 12px;
+		color: #ffffff;
+		line-height: 40px;
+		font-weight: bold;
+		margin-top: 45px;
+		border: 1px solid #ffffff;
+	}
+
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------MAN-&-DESK+CATEGORY----------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+	div.man_desk div div.text{
+		margin-top: 30px;
+		margin-left: 100px;
+	}
+
+	div.man_desk h3{
+		color: #242424;
+		/*font-size: 45px;*/
+		font-weight: 600; 
+		margin-top: 30px;
+		margin-bottom: 0px;
+	}
+	div.man_desk p{
+		color: #878787;
+		/*font-size: 12px;*/
+		line-height: 2.1;
+		font-weight: bold;
+		margin-top: 36px;
+		margin-bottom: 32px;
+	}
+	div.man_desk a.button4{
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		background: #2ebaee;
+		height: 40px;
+		width: 135px;
+		border-radius: 55px;
+		font-size: 12px;
+		color: #ffffff;
+		line-height: 40px;
+		font-weight: bold;
+	}
+	div.man_desk a.button4:hover{
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		background: #ffffff;
+		height: 40px;
+		width: 135px;
+		border-radius: 55px;
+		font-size: 12px;
+		color: #2ebaee;
+		line-height: 40px;
+		font-weight: bold;
+		border: 1px solid;
+	}
+
+/*----------------------------------------*/
+
+	div.category{
+		height: auto;
+		max-width: 2000px;
+	}
+
+	div.category a.button_category_1, div.category a.button_category_2, div.category a.button_category_3, div.category a.button_category_4{
+		font-size: calc(32px + (16 + 16 * 0.7) * (100vw - 1200px) / 2000);
+		padding-top: 128px;
+		padding-bottom: 126px;
+	}
+	div.category a.button_category_1:hover, div.category a.button_category_2:hover, div.category a.button_category_3:hover, div.category a.button_category_4:hover{
+		font-size: calc(32px + (16 + 16 * 0.7) * (100vw - 1200px) / 2000);
+		padding-top: 128px;
+		padding-bottom: 126px;
+	}	
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------CHEK-OUR-AWESOME-TEAM----------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+
+	div.conteiner3{
+		height: auto;
+		max-width: 2000px;
+	}
+
+	section.team{
+		max-width: 1300px;
+		margin: 0 auto;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+/*------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------CONTACT-US-(footer)-------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------*/
+
+	div.contact_us{
+		max-width: 1300px;
+		margin: 0 auto;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+/*----------------------------------------------Footer-(Copyright)---------------------------------------------*/
+
+	div.menu_copyright{
+		max-width: 1300px;
+		margin: 0 auto;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+
+
+/* Экстра большие девайсы (большие десктопы, >= 1400px)-------------------------------------------------------------------------------------------------------------*/
+@media (min-width: 1400px) and (max-width: 1820.98px) {
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------OUR SERVICES----------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+	div.services_2 div.Mc_PC img.PC_img-adaptive{
+		display: block;
+		margin-left: -72px;	
+		max-width: 117%; /*адаптирует размер картинок к разрешениям браузера!!!!!!!!!!!!!!!!!!!!!!*/
+		height: auto;	
+	}
+
+/*------------------------------------*/
+
+	div.services_3 div.Mc_MP img.MP_img-adaptive{
+		display: block;
+		float: right;	
+		max-width: 100%; /*адаптирует размер картинок к разрешениям браузера!!!!!!!!!!!!!!!!!!!!!!*/
+		height: auto;
+	}
+
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------MAN-&-DESK+CATEGORY----------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+
+	div.man_desk div div.text {
+		margin-top: 45px;
+	}
+
+	div.man_desk h3{
+		color: #242424;
+		/*font-size: 55px;*/
+		font-weight: 600;
+		margin-top: 45px; 
+		margin-bottom: 0px;		
+	}
+	div.man_desk p{
+		color: #878787;
+		/*font-size: 12px;*/
+		line-height: 2.1;
+		/*max-width: 510px;*/
+		font-weight: bold;
+		margin-top: 58px;
+		margin-bottom: 50px;
+	}
+	div.man_desk a.button4{
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		background: #2ebaee;
+		height: 40px;
+		width: 135px;
+		border-radius: 55px;
+		font-size: 12px;
+		color: #ffffff;
+		line-height: 40px;
+		font-weight: bold;
+	}
+	div.man_desk a.button4:hover{
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		background: #ffffff;
+		height: 40px;
+		width: 135px;
+		border-radius: 55px;
+		font-size: 12px;
+		color: #2ebaee;
+		line-height: 40px;
+		font-weight: bold;
+		border: 1px solid;
+	}
+
+/*----------------------------------------*/
+
+	div.category{
+		height: auto;
+		max-width: 2000px;
+	}
+}	
+
+
+	/*----------------------------------------------Footer-(Copyright)---------------------------------------------*/
+
+
+	/* Экстра большие девайсы (большие десктопы, >= 1821px)-------------------------------------------------------------------------------------------------------------*/
+@media (min-width: 1821px) {
+
+
+/*--------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------MENU---------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------*/
+
+	header nav ul li a{
+		font-size: 18px;
+	}
+	div.search-box input.search-text{	
+		font-size: 18px;
+	}
+	div.search-box input.search-text:hover {
+		font-size: 18px;
+	}
+
+/*-------------------call-to-action------------------*/
+
+	header div.call-to-action h1{
+		font-size: 72px;
+	}												    /* При разрешении 1920px = 100vw, исходный размер шрифта = 72px при ширине макета 2000px */
+									    				/* выбираем min значение шрифта 48px при min разрешении девайса 320px, при этом доавочное число: 72px - 48px = 24px */
+							    						/* расчет будет выполняться по формуле: calc(48px + 24 * (100vw / 2000)) */
+														/* для компенсации разрешения 320px (так как нижняя граница не 0xp, а 320px) - расчет будет: 
+														/* calc(48px + (24 + 24 * 0.7) * ((100vw - 320px) / 2000)), где 0.7 - 70% */
+	header div.call-to-action p{
+		font-size: 24px;
+	}
+	header div.call-to-action a{
+		font-size: 18px;
+	}
+	header div.call-to-action a:hover {
+		font-size: 18px;
+	}
+
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------OUR SERVICES----------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+	section.Our_services h2{
+		font-size: 48px;
+	}
+	div.services div h3{
+		font-size: 24px;
+	}
+	div.services div p{
+		font-size: 14px;
+	}
+
+/*------------------------------------*/
+
+	div.services_1 a.button1{
+		font-size: 14px;
+	}
+	div.services_1 a.button1:hover{
+		font-size: 14px;		
+	}
+
+/*------------------------------------*/
+
+	div.services_2 h3{
+		font-size: 36px;
+	}
+	div.services_2 p{
+		font-size: 14px;
+	}
+	div.services_2 a.button2{
+		font-size: 14px;
+	}
+	div.services_2 a.button2:hover{
+		font-size: 14px;	
+	}
+
+/*------------------------------------*/
+
+	div.services_3 h3{
+		font-size: 36px;
+	}
+	div.services_3 p{
+		font-size: 14px;
+	}
+	div.services_3 a.button3{	
+		font-size: 14px;
+	}
+	div.services_3 a.button3:hover{	
+		font-size: 14px;	
+	}
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------MAN-&-DESK+CATEGORY----------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+	div.man_desk h3{
+		font-size: 72px;	
+	}
+	div.man_desk p{
+		font-size: 14px;
+	}
+	div.man_desk a.button4{
+		font-size: 14px;	
+	}
+	div.man_desk a.button4:hover{	
+		font-size: 14px;	
+	}
+
+/*-----------------------------------------------category----------------------------------------------------*/
+
+	div.category a.button_category_1{	
+		font-size: 48px;	
+	}
+	div.category a.button_category_1:hover{	
+		font-size: 48px;		
+	}
+	div.category a.button_category_2{
+		font-size: 48px;	
+	}
+	div.category a.button_category_2:hover{
+		font-size: 48px;	
+	}
+	div.category a.button_category_3{
+		font-size: 48px;	
+	}
+	div.category a.button_category_3:hover{	
+		font-size: 48px;		
+	}
+	div.category a.button_category_4{
+			font-size: 48px;	
+	}
+	div.category a.button_category_4:hover{	
+		font-size: 48px;
+	}
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------CHEK-OUR-AWESOME-TEAM----------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+	div.team_1 h1{
+		font-size: 72px;
+	}
+	div.team_1 h1 span{	
+		font-size: 72px;
+	}
+	div.team_1 h3{
+		font-size: 36px;
+	}
+	div.team_1 p{
+		font-size: 14px;	
+	}
+	div.team_1 a.button5{
+		font-size: 14px;
+	}
+	div.team_1 a.button5:hover{
+		font-size: 14px;		
+	}
+
+/*------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------CONTACT-US-(footer)-------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------*/
+
+	div.cont_w_us h1.cont_w_us-adaptive{
+		font-size: 72px;
+		/*font-size: calc(30px + 44.5 * (100vw / 2000));*/
+	}
+	div.cont_w_us p.address{	
+		font-size: 18px;		
+	}
+	div.cont_w_us p.phone{	
+		font-size: 30px;	
+	}
+	div.cont_w_us p.e-mail{
+		font-size: 30px;	
+	}
+
+/*----------------------------------------------web_form----------------------------------------------------*/
+
+	div.web_form input[type="text"]{	
+		font-size: 19px;
+	}
+	input[type="e-mail"]{	
+		font-size: 19px;
+	}
+	div.web_form textarea{	
+		font-size: 19px;	
+	}
+	div.web_form a.button6{	
+		font-size: 14px;	
+	}
+	div.web_form a.button6:hover{	
+		font-size: 14px;	
+	}
+
+/*----------------------------------------------Footer-(Copyright)---------------------------------------------*/
+
+
+	div.menu ul.list_3-adaptive{	
+		font-size: 14px;	
+	}
+	div.menu ul.list_3-adaptive li a{	
+		font-size: 14px;				
+	}
+	div.menu ul.list_3-adaptive li a:hover{	
+		*font-size: 14px;	
+	}
+
+	/*--------------------------------------------*/
+
+	div.copyright p.copyright-adaptive{
+		font-size: 14px;	
+	}			 								
+
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
